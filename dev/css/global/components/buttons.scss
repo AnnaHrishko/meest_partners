@@ -1,0 +1,37 @@
+@import "../mixins";
+.btn {
+    display: flex;
+    width: fit-content;
+    padding: 19px 30px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    @include maxWidth1024() {
+        font-size: 12px;
+        padding: 12px 22px;
+    }
+
+    svg {
+        margin-left: 30px;
+
+        @include maxWidth1024() {
+            margin-left: 15px;
+        }
+    }
+
+    &.btn-blue-dark {
+        background: #0061AF;
+    }
+
+    &.btn-outline {
+        border-radius: 100px;
+        border: 1px solid #2361A9;
+        color: #2361A9;
+    }
+}

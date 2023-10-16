@@ -1,0 +1,358 @@
+.page.page--services .section_banner__title {
+  color: #2361A9;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__title {
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: 0.48px;
+  }
+}
+
+.faq_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-content: center;
+  min-width: 100%;
+}
+@media (max-width: 1024px) {
+  .faq_list {
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+}
+.faq_list__item {
+  border-radius: 20px;
+  background: #F8F9FA;
+  overflow: hidden;
+}
+.faq_list__item__question {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 25px 30px 25px 40px;
+  cursor: pointer;
+  color: #2361A9;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 109%; /* 18.53px */
+  letter-spacing: -0.17px;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .faq_list__item__question {
+    padding: 15px 20px;
+    color: #2361A9;
+    font-size: 13px;
+    line-height: 130%; /* 16.9px */
+    letter-spacing: -0.13px;
+  }
+}
+.faq_list__item__question__img {
+  line-height: 0;
+  min-width: 17px;
+  width: 17px;
+}
+@media (max-width: 1024px) {
+  .faq_list__item__question__img {
+    line-height: 0;
+    min-width: 14px;
+    width: 14px;
+  }
+}
+.faq_list__item__question__img img {
+  width: 100%;
+  height: auto;
+}
+.faq_list__item__answer {
+  display: none;
+}
+.faq_list__item__answer > hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #C8DAEC;
+  margin: 0;
+  border: none;
+  line-height: 0;
+}
+.faq_list__item__answer__inner {
+  padding: 30px 150px 30px 40px;
+  color: rgba(27, 43, 60, 0.7);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: 0.3px;
+}
+@media (max-width: 1024px) {
+  .faq_list__item__answer__inner {
+    padding: 16px 20px 20px;
+    font-size: 12px;
+  }
+}
+.faq_list__item__answer__inner b, .faq_list__item__answer__inner strong {
+  color: #2361A9;
+  font-weight: 700;
+}
+
+.page.page--services .section_banner__filter__input, .page.page--services .section_banner__filter__select {
+  padding: 16px 19px 17px 20px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #FFF;
+  color: #1B2B3C;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 109%; /* 15.26px */
+  letter-spacing: 0.28px;
+}
+
+.page.page--services .section_faq__title {
+  color: #2361A9;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 37.5px */
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_faq__title {
+    font-size: 20px;
+    line-height: 120%; /* 24px */
+  }
+}
+
+.page.page--services {
+  padding-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .page.page--services {
+    padding-bottom: 30px;
+  }
+}
+.page.page--services .section_banner {
+  border-radius: 20px;
+  background-image: var(--banner-bg);
+  background-color: #DEEBF5;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner {
+    border-radius: 0;
+    background-image: none;
+  }
+}
+.page.page--services .section_banner__inner {
+  padding: 23px 38px 41px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__inner {
+    padding: 30px 60px 26px 15px;
+  }
+}
+.page.page--services .section_banner__title {
+  margin-top: 50px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__title {
+    margin-top: 30px;
+  }
+}
+.page.page--services .section_banner__filter__wrapper {
+  display: flex;
+  flex-direction: row;
+  row-gap: 15px;
+  column-gap: 10px;
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__filter__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.page.page--services .section_banner__filter__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  column-gap: 7px;
+  position: relative;
+  justify-content: flex-end;
+}
+.page.page--services .section_banner__filter__label {
+  padding-left: 10px;
+  color: #2361A9;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109%; /* 13.08px */
+  letter-spacing: 0.24px;
+}
+.page.page--services .section_banner__filter__select {
+  appearance: none;
+  width: 240px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__filter__select {
+    width: initial;
+    flex-grow: 1;
+  }
+}
+.page.page--services .section_banner__filter__input {
+  width: 280px;
+  padding-right: 40px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_banner__filter__input {
+    width: initial;
+    flex-grow: 1;
+  }
+}
+.page.page--services .section_banner__filter__input::placeholder {
+  color: #848D97;
+}
+.page.page--services .section_banner__filter__input__icon {
+  line-height: 0;
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+}
+.page.page--services .section_banner__filter__input__icon img {
+  width: 100%;
+  height: auto;
+}
+.page.page--services .section_countries {
+  padding: 30px 0;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_countries {
+    padding: 27px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_countries__inner {
+    max-height: 740px;
+    margin-bottom: 20px;
+  }
+}
+.page.page--services .section_countries__inner .simplebar-track.simplebar-vertical {
+  width: 3px;
+  right: -9px;
+}
+.page.page--services .section_countries__cards {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  column-gap: 25px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_countries__cards {
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}
+.page.page--services .section_countries__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 15px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  width: calc(20% - 80px);
+  padding: 30px;
+}
+@media (max-width: 1024px) {
+  .page.page--services .section_countries__card {
+    width: calc(50% - 45px);
+    padding: 20px;
+  }
+}
+.page.page--services .section_countries__card__img {
+  line-height: 0;
+  min-width: 55px;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #F1F0F0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.page.page--services .section_countries__card__img img {
+  width: 100%;
+  height: auto;
+}
+.page.page--services .section_countries__card__info {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 16px;
+  column-gap: 16px;
+}
+.page.page--services .section_countries__card__info__title {
+  color: #1B2B3C;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 146.667% */
+  letter-spacing: 0.3px;
+}
+.page.page--services .section_countries__card__info__arrow {
+  line-height: 0;
+  min-width: 7px;
+  width: 7px;
+  height: 12px;
+}
+.page.page--services .section_countries__card__info__arrow img {
+  width: 100%;
+  height: auto;
+}
+.page.page--services .section_faq {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 50px 40px 67px;
+}
+.page.page--services .section_faq__list {
+  width: 100%;
+  max-width: 1000px;
+}

@@ -1,0 +1,22 @@
+@import "../mixins";
+.section-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #2361A9;
+    margin: 0;
+
+    @include maxWidth500() {
+        font-size: 22px;
+        line-height: 29px;
+    }
+}
+
+.section-subtitle {
+    color: #606B77;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.28px;
+}

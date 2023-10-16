@@ -1,0 +1,57 @@
+@import "../mixins";
+
+.breadcrumbs {
+    display: inline-flex;
+    align-items: center;
+    @include gap(8px);
+
+    > a, > span {
+        display: inline-block;
+        color: rgba(35, 97, 169, 0.50);
+        font-family: Montserrat;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.26px;
+        text-decoration: none;
+
+        @include mobile() {
+            display: none;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 109%;
+            letter-spacing: 0.36px;
+            text-transform: uppercase;
+        }
+
+        &:last-child {
+            color: #2361A9;
+        }
+
+        &:nth-child(2) {
+            @include mobile() {
+                color: #2361A9;
+                display: inline-block;
+            }
+        }
+    }
+
+    &__img {
+        &--mobile {
+            display: none;
+
+            @include mobile() {
+                display: block;
+            }
+        }
+
+        &--desktop {
+            display: inline-block;
+
+            @include mobile() {
+                display: none;
+            }
+        }
+    }
+}

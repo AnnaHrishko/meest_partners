@@ -1935,6 +1935,14 @@ body {
     letter-spacing: 0.28px;
   }
 }
+.blue-button--small {
+  padding: 13px 24px;
+}
+.blue-button--small span {
+  font-size: 13px;
+  line-height: 109%; /* 14.17px */
+  letter-spacing: 0.26px;
+}
 
 .white-btn {
   border-radius: 100px;
@@ -2226,6 +2234,7 @@ body {
     margin-left: 0;
     overflow-x: scroll;
     padding-bottom: 20px;
+    max-width: 1055px;
   }
 }
 .advent-wrap__row {
@@ -2839,6 +2848,15 @@ body {
   margin-left: 25px;
   padding: 18px 20px 20px 20px;
 }
+.advertising-adventages-sec__inner__advrtsng-adventg-wrapper .advrtsng-adventg-row:nth-of-type(3) .img {
+  width: 50%;
+  margin: 0 auto 25px;
+}
+@media screen and (max-width: 1055px) {
+  .advertising-adventages-sec__inner__advrtsng-adventg-wrapper .advrtsng-adventg-row:nth-of-type(3) .img {
+    margin: 0 auto 15px;
+  }
+}
 @media screen and (max-width: 1055px) {
   .advertising-adventages-sec__inner__advrtsng-adventg-wrapper .advrtsng-adventg-row {
     width: calc(50% - 25px);
@@ -2892,6 +2910,8 @@ body {
   border-radius: 12px;
   object-fit: cover;
   display: block;
+  height: 264px;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 1055px) {
   .advertising-adventages-sec__inner__advrtsng-adventg-wrapper .advrtsng-adventg-row .img {
@@ -2902,6 +2922,7 @@ body {
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
+  height: 100%;
 }
 
 .fast-delivery-sec {

@@ -3536,14 +3536,11 @@ body {
   letter-spacing: 0.28px;
   opacity: 1;
 }
-.contact-us-sec__inner__form .form-manager .blue-button {
+.contact-us-sec__inner__form .form-manager .btn {
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .contact-us-sec__inner__form .form-manager .blue-button {
-    display: flex;
-    justify-content: center;
-  }
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 .contact-us-sec__inner__form .get-manager {
   display: none;

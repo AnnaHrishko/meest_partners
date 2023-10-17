@@ -1171,12 +1171,11 @@ body{
                         }
                     }
                 }
-                .blue-button{
+                .btn{
                     width: 100%;
-                    @include maxWidth768(){
-                        display: flex;
-                        justify-content: center;
-                    }
+                    border: none;
+                    display: flex;
+                    justify-content: center;
                 }
             }
             .get-manager{

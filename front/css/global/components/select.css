@@ -5,37 +5,23 @@
   background: #FFFFFF;
   border: 1px solid #D7D8D9;
   border-radius: 100px;
-  padding: 15px 20px;
+  padding: 10px;
   cursor: pointer;
   white-space: nowrap;
 }
 .select-simple-selected input {
+  width: 90%;
+  overflow: hidden;
   border: none;
   outline: none;
-  overflow: hidden;
-  width: 90%;
-  color: #2361A9;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 109%;
-  letter-spacing: 0.26px;
-  text-transform: uppercase;
-  background: #fff;
 }
 .select-simple-selected input::placeholder {
-  color: #2361A9;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 109%;
-  letter-spacing: 0.26px;
-  text-transform: uppercase;
-}
-.select-simple-selected span {
-  width: 90%;
-  overflow: hidden;
-}
-.select-simple-selected svg {
-  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #1B2B3C;
+  text-decoration: none;
 }
 .select-simple .select-simple-selected, .select-simple .select-simple-item {
   display: flex;
@@ -48,13 +34,13 @@
   height: 24px;
   margin-right: 10px;
 }
-.select-simple .select-simple-selected p, .select-simple .select-simple-selected span, .select-simple .select-simple-item p, .select-simple .select-simple-item span {
-  color: #2361A9;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 109%;
-  letter-spacing: 0.26px;
-  text-transform: uppercase;
+.select-simple .select-simple-selected p, .select-simple .select-simple-selected span, .select-simple .select-simple-selected a, .select-simple .select-simple-item p, .select-simple .select-simple-item span, .select-simple .select-simple-item a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #1B2B3C;
+  text-decoration: none;
 }
 .select-simple .select-simple-loader {
   display: flex;
@@ -73,13 +59,13 @@
   left: 10px;
   display: none;
   max-height: 300px;
-  z-index: 12;
+  z-index: 1;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
 }
 .select-simple .select-simple-items .select-simple-item {
-  padding: 10px 20px;
+  padding: 10px 60px 10px 20px;
 }
 .select-simple .select-simple-items .select-simple-item p {
   text-transform: uppercase;
@@ -87,9 +73,6 @@
   line-height: 22px;
   color: #2361A9;
   font-weight: 700;
-}
-.select-simple .select-simple-items .select-simple-item svg {
-  margin-left: auto;
 }
 .select-simple .select-simple-items .select-simple-item:hover {
   background: #F1F4F9;

@@ -9,6 +9,12 @@
   font-size: 12px;
   margin-left: 20px;
 }
+.form-group .form-group-error {
+  text-align: left;
+  color: #e30338;
+  font-size: 12px;
+  margin-top: 5px;
+}
 
 .input-simple {
   width: calc(100% - 21px);
@@ -16,7 +22,7 @@
   border-radius: 100px;
   border: none;
   height: 44px;
-  padding-left: 21px;
+  padding: 0 0 0 21px;
 }
 .input-simple:disabled {
   background: #ccc;

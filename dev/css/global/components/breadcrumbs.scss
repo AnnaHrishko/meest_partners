@@ -1,57 +1,33 @@
-@import "../mixins";
-
 .breadcrumbs {
-    display: inline-flex;
-    align-items: center;
-    @include gap(8px);
+    padding-top: 20px;
+    padding-bottom: 10px;
 
-    > a, > span {
-        display: inline-block;
-        color: rgba(35, 97, 169, 0.50);
-        font-family: Montserrat;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-        text-decoration: none;
+    &-list {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
 
-        @include mobile() {
-            display: none;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 109%;
-            letter-spacing: 0.36px;
-            text-transform: uppercase;
+        a, span {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
         }
 
-        &:last-child {
+        a {
+            color: #2361A980;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            &:after {
+                content: url("/app/images/breadcrumbs-arrow.svg");
+                padding: 0 5px;
+                height: 18px;
+            }
+        }
+
+        span {
             color: #2361A9;
-        }
-
-        &:nth-child(2) {
-            @include mobile() {
-                color: #2361A9;
-                display: inline-block;
-            }
-        }
-    }
-
-    &__img {
-        &--mobile {
-            display: none;
-
-            @include mobile() {
-                display: block;
-            }
-        }
-
-        &--desktop {
-            display: inline-block;
-
-            @include mobile() {
-                display: none;
-            }
         }
     }
 }

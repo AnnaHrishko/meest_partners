@@ -173,7 +173,3 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
-.sidebar-link--region .simplebar-content, .sidebar-link--language .simplebar-content {
-  flex-direction: column;
-}

@@ -1,32 +1,23 @@
 @import "../mixins";
-.footer-inner {
-    display: flex;
-    background: #fff;
-    border: 1px solid #DEEBF5;
-    padding: 60px 40px 20px 40px;
-    border-radius: 20px 20px 0 0;
-    max-width: 1250px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+@import "./buttons";
+@import "./select";
+@import "./input";
 
-    @include maxWidth1440() {
-        max-width: 100%;
-        width: calc(100% - 192px);
-        margin: 0 30px 0 auto;
-    }
+footer {
+    border-top: 1px solid #E6E6E6;
+    padding-top: 50px;
 
     @include maxWidth1024() {
-        width: 100%;
-        padding: 30px 0 0 0;
-        flex-direction: column;
-        border-radius: 0;
-        margin-bottom: 0;
+        padding-top: 20px;
     }
 }
 
-.footer-logo {
+.footer-inner {
+    display: flex;
+
     @include maxWidth1024() {
-        width: 138px;
+        width: 100%;
+        flex-direction: column;
     }
 }
 
@@ -34,7 +25,6 @@
     display: flex;
     flex-direction: column;
     margin-right: 100px;
-    width: 280px;
 
     @include maxWidth1024() {
         width: 100%;
@@ -136,6 +126,32 @@
             margin-top: 10px;
             text-align: center;
         }
+
+        &--qr {
+            position: relative;
+
+            @include maxWidth500() {
+                display: none;
+            }
+
+            .qr {
+                display: none;
+                z-index: 3;
+                padding: 40px 40px 50px;
+                position: absolute;
+                bottom: 105%;
+                left: -100%;
+                background-image: url(/app/images/qr_bg.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                .qr {
+                    display: block;
+                }
+            }
+        }
     }
 }
 
@@ -158,14 +174,32 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
-    a {
+    a, p {
         font-weight: 600;
         font-size: 14px;
         line-height: 29px;
         letter-spacing: 0.04em;
         text-decoration-line: underline;
         text-transform: uppercase;
-        color: #2361A9;
+        color: rgba(35, 97, 169, 0.7);
+
+        @include maxWidth1024() {
+            margin-right: 16px;
+        }
+    }
+}
+
+.footer-hours {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 29px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: rgba(35, 97, 169, 0.7);
 
         @include maxWidth1024() {
             margin-right: 16px;
@@ -193,9 +227,9 @@
     box-sizing: initial;
 
     @include maxWidth1024() {
-        width: calc(100% - 54px);
-        padding: 30px 27px;
-        border-radius: 30px 30px 0 0;
+        width: calc(100% - 30px);
+        border-radius: 0;
+        padding: 30px 15px;
     }
 
     input {
@@ -212,7 +246,6 @@
         margin-bottom: 11px;
 
         @include maxWidth1024() {
-            text-align: center;
             font-size: 17px;
             line-height: 24px;
         }
@@ -225,7 +258,6 @@
         color: #FFFFFF;
 
         @include maxWidth1024() {
-            text-align: center;
             font-size: 13px;
             line-height: 20px;
         }
@@ -250,13 +282,6 @@
         }
     }
 
-    &-footer {
-        @include maxWidth1024() {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
     &-submit {
         background: #0061AF;
         border: 2px solid #FFFFFF;
@@ -274,8 +299,6 @@
 
         @include maxWidth1024() {
             padding: 15px 22px;
-            width: calc(100% - 44px);
-            justify-content: center;
         }
     }
 
@@ -318,21 +341,15 @@
             font-weight: 600;
         }
     }
-
-    .checkbox-container {
-        @include maxWidth1024() {
-            width: calc(100% - 54px);
-        }
-    }
 }
 
 .footer-lang {
     display: flex;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 
     @include maxWidth1024() {
-        width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     &-text {
@@ -344,23 +361,7 @@
     }
 }
 
-.footer-lang-select {
-    @include maxWidth1024() {
-        padding: 0 48px;
-
-        .select-simple {
-            width: 100%;
-        }
-
-        .footer-description {
-            text-align: center;
-        }
-    }
-
-}
-
 .footer-copyright {
-    width: 100%;
     font-weight: 500;
     font-size: 11px;
     line-height: 20px;
@@ -372,18 +373,78 @@
     }
 }
 
-.checkbox--footer {
-    margin-bottom: 25px !important;
+
+.footer-subscribe-footer {
 
     @include maxWidth1024() {
-        margin-bottom: 30px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
-.footer-description {
-    color: #606B77;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-top: 15px;
+.select-simple--footer-langs {
+    width: 180px;
+}
+
+.df__popup-promo {
+    background: #DEEBF5;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    padding: 30px 140px 30px 30px;
+    border-top-left-radius: 16px;
+    box-sizing: border-box;
+    z-index: 99999;
+    display: none;
+    border: 1px solid #0061AF;
+    @include maxWidth500() {
+        width: calc(100% - 30px);
+        left: 15px;
+        bottom: 12px;
+        border-radius: 16px;
+        padding: 22px 120px 22px 22px;
+    }
+    @include maxWidth425() {
+        padding: 22px;
+    }
+    &.active {
+        display: block;
+    }
+    h3 {
+        color: #0061AF;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0 0 10px;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+    p {
+        font-weight: 500;
+        font-size: 13px;
+        color: #0061AF;
+        margin: 0 0 64px;
+        line-height: 1.6;
+        @include maxWidth425() {
+            width: 90%;
+        }
+        @include maxWidth500() {
+            width: 75%;
+            margin: 0 0 24px;
+        }
+    }
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .promo-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include maxWidth500() {
+            width: 180px;
+        }
+    }
 }

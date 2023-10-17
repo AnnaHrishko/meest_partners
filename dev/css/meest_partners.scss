@@ -8,45 +8,6 @@ body{
     box-sizing: border-box;
     margin: 0; 
 }
-.container{
-    width: 100%;
-    max-width: 1388px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-.blue-button{
-    border: unset;
-    display: inline-flex;
-    background: #0061AF;
-    border-radius: 100px;
-    padding: 19px 35px 19px 35px;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    @include maxWidth991(){
-        padding: 19px 20px;
-    }
-    span{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 109%;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        @include maxWidth991(){
-            font-size: 14px;
-            letter-spacing: 0.28px;
-        }
-    }
-    &--small{
-        padding: 13px 24px;
-        span{
-            font-size: 13px;
-            line-height: 109%; /* 14.17px */
-            letter-spacing: 0.26px;
-        }
-    }
-}
 .white-btn{
     border-radius: 100px;
     background: #FFF;   

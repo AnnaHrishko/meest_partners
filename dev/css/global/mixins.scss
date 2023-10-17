@@ -46,6 +46,12 @@
     }
 }
 
+@mixin maxWidth1366() {
+    @media screen and (max-width: 1366px) {
+        @content;
+    }
+}
+
 @mixin maxWidth1024() {
     @media screen and (max-width: 1024px) {
         @content;
@@ -87,7 +93,11 @@
         @content;
     }
 }
-
+@mixin maxWidth360() {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
 
 @mixin flex-row {
     display: flex;
